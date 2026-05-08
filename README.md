@@ -76,10 +76,10 @@ Raw Data (3.7M reviews)
 > Results will be updated as training completes.
 > 实验结果训练完成后持续更新。
 
-| Model | RMSE | Precision@10 | Recall@10 | NDCG@10 |
-|-------|------|--------------|-----------|---------|
-| SVD Baseline | TBD | TBD | TBD | TBD |
-| Two-Tower + MLP | TBD | TBD | TBD | TBD |
+| Model | Precision@10 | Recall@10 | NDCG@10 |
+|-------|--------------|-----------|---------|
+| ALS Baseline | 0.0022 | 0.0223 | 0.0117 |
+| Two-Tower + MLP | TBD | TBD | TBD |
 
 ---
 
@@ -136,8 +136,8 @@ amazon-beauty-rec/
 ## Roadmap / 开发计划
 
 - [x] Project design & README / 项目设计
-- [ ] **Week 1** — Data download, cleaning, EDA / 数据下载、清洗、探索分析
-- [ ] **Week 2** — SVD baseline + evaluation metrics / SVD 基线 + 评估指标
+- [x] **Week 1** — Data download, cleaning, EDA / 数据下载、清洗、探索分析
+- [x] **Week 2** — ALS baseline + evaluation metrics / ALS 基线 + 评估指标
 - [ ] **Week 3** — Two-Tower retrieval + FAISS index / 两塔召回 + FAISS 索引
 - [ ] **Week 4** — MLP ranking + FastAPI serving / MLP 精排 + FastAPI 服务
 - [ ] **Week 4.5** — README polish + GitHub cleanup / 完善文档
