@@ -4,9 +4,12 @@ A two-stage retrieval-ranking recommendation system built on 3.7M real Amazon Be
 
 > 基于 370 万条亚马逊美妆真实评论构建的两阶段召回+精排推荐系统。
 
+> **Status / 当前进度:** Stage 1 done — data cleaning, EDA, and an **ALS baseline with real evaluation metrics** (see [Results](#results--实验结果)). Stage 2 (two-tower retrieval + MLP ranking + FastAPI serving) is **in progress**. The API example below is the **target interface**, not yet live.
+> **当前进度:** 第一阶段已完成——数据清洗、EDA、以及**有真实评估指标的 ALS 基线**(见下方 Results)。第二阶段(两塔召回 + MLP 精排 + FastAPI 服务)**开发中**。下方 API 示例是**目标接口**,尚未上线。
+
 ---
 
-## Demo
+## Target API (Stage 2, planned) / 目标接口(第二阶段,规划中)
 
 ```
 GET /recommend?user_id=A1B2C3
